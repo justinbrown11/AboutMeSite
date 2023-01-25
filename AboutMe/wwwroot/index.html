@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <link rel="icon" href="https://img.icons8.com/color/96/null/cool--v1.png" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> <!--Bootstrap-->
+    <link href="css/stylesheet.css" rel="stylesheet" /> <!--Custom CSS-->
+</head>
+<body>
+
+    <!--Header-->
+    <h1>Justin Brown</h1><br />
+
+    <!--Picture-->
+    <img src="img/scuba.jpg" width="1000"/>
+
+    <!--Expectation for the class-->
+    <p>I hope to hone my skills as a developer and learn enterprise level skills when building applications. I hope to become proficient in C# and ASP.NET.</p><br />
+
+    <!--Jobs interested in-->
+    <p>Top 3 jobs i'm interested in upon graduation:</p>
+    <ul>
+        <li>Developer</li>
+        <li>Cloud Solutions Architect</li>
+        <li>Some job in cybersecurity</li>
+    </ul><br />
+
+    <!--Grade Calculator form-->
+    <form id="grade-calc">
+        <fieldset>
+            <p>Grade Calculator (enter all as percentages)</p>
+
+            <label>Assignments Percentage Score:</label>
+            <input id="assignment" type="number" /><p>%</p><br />
+
+            <label>Group Project Percentage Score:</label>
+            <input id="group-project" type="number" /><p>%</p><br />
+
+            <label>Quizzes Percentage Score:</label>
+            <input id="quiz" type="number" /><p>%</p><br />
+
+            <label>Midterm Exam Percentage Score:</label>
+            <input id="midterm" type="number" /><p>%</p><br />
+
+            <label>Final Exam Percentage Score:</label>
+            <input id="final" type="number" /><p>%</p><br />
+
+            <label>INTEX Percentage Score:</label>
+            <input id="intex" type="number" /><p>%</p><br />
+
+            <input id="btn" type="button" />
+
+            <h4 id="final-percent"></h4>
+            <h4 id="final-letter"></h4>
+        </fieldset>
+    </form><br />
+
+    <!--Include Libraries-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+    <!--Grade calculator script-->
+    <script src="js/gradeCalc.js"></script>
+</body>
+</html>
