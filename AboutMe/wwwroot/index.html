@@ -10,51 +10,83 @@
 <body>
 
     <!--Header-->
-    <h1>Justin Brown</h1><br />
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <img src="https://img.icons8.com/color/96/null/cool--v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Justin Brown
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#grade-calc">Grade Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!--Picture-->
-    <img src="img/scuba.jpg" width="1000"/>
+    <img id="scuba-pic" src="img/scuba.jpg" class="img-fluid"/>
 
-    <!--Expectation for the class-->
-    <p>I hope to hone my skills as a developer and learn enterprise level skills when building applications. I hope to become proficient in C# and ASP.NET.</p><br />
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div id="about" class="col align-self-center">
+                <!--Expectation for the class-->
+                <p>I hope to hone my skills as a developer and learn enterprise level skills when building applications. I hope to become proficient in C# and ASP.NET.</p><br />
 
-    <!--Jobs interested in-->
-    <p>Top 3 jobs i'm interested in upon graduation:</p>
-    <ul>
-        <li>Developer</li>
-        <li>Cloud Solutions Architect</li>
-        <li>Some job in cybersecurity</li>
-    </ul><br />
+                <br />
+                <br />
+                <br />
+                <!--Jobs interested in-->
+                <div class="container">
+                    <p>Top 3 jobs i'm interested in upon graduation:</p>
+                    <ul>
+                        <li>Developer</li>
+                        <li>Cloud Solutions Architect</li>
+                        <li>Some job in cybersecurity</li>
+                    </ul><br />
+                </div>
+            </div>
 
-    <!--Grade Calculator form-->
-    <form id="grade-calc">
-        <fieldset>
-            <p>Grade Calculator (enter all as percentages)</p>
+            <!--Grade Calculator form-->
+            <div class="col align-self-center">
+                <form id="grade-calc">
+                    <h4>Grade Calculator</h4>
+                    <div class="form-group">
+                        <label>Assignments Score</label>
+                        <input type="number" class="form-control" id="assignment" placeholder="Enter %">
+                    </div><br />
+                    <div class="form-group">
+                        <label>Group Projects Score</label>
+                        <input type="number" class="form-control" id="group-project" placeholder="Enter %">
+                    </div><br />
+                    <div class="form-group">
+                        <label>Quizzes Score</label>
+                        <input type="number" class="form-control" id="quiz" placeholder="Enter %">
+                    </div><br />
+                    <div class="form-group">
+                        <label>Midterm Score</label>
+                        <input type="number" class="form-control" id="midterm" placeholder="Enter %">
+                    </div><br />
+                    <div class="form-group">
+                        <label>Final Score</label>
+                        <input type="number" class="form-control" id="final" placeholder="Enter %">
+                    </div><br />
+                    <div class="form-group">
+                        <label>INTEX Score</label>
+                        <input type="number" class="form-control" id="intex" placeholder="Enter %">
+                    </div>
+                    <br />
+                    <button id="btn" class="btn btn-primary">Calculate</button>
+                </form><br />
 
-            <label>Assignments Percentage Score:</label>
-            <input id="assignment" type="number" /><p>%</p><br />
-
-            <label>Group Project Percentage Score:</label>
-            <input id="group-project" type="number" /><p>%</p><br />
-
-            <label>Quizzes Percentage Score:</label>
-            <input id="quiz" type="number" /><p>%</p><br />
-
-            <label>Midterm Exam Percentage Score:</label>
-            <input id="midterm" type="number" /><p>%</p><br />
-
-            <label>Final Exam Percentage Score:</label>
-            <input id="final" type="number" /><p>%</p><br />
-
-            <label>INTEX Percentage Score:</label>
-            <input id="intex" type="number" /><p>%</p><br />
-
-            <input id="btn" type="button" />
-
-            <h4 id="final-percent"></h4>
-            <h4 id="final-letter"></h4>
-        </fieldset>
-    </form><br />
+                <h4 id="final-percent"></h4>
+                <h4 id="final-letter"></h4>
+            </div>
+        </div>
+    </div>
 
     <!--Include Libraries-->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
