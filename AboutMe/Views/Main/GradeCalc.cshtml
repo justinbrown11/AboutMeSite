@@ -1,0 +1,88 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalcModel
+
+<!--Grade Calculator form-->
+<!--<div class="col align-self-center d-flex justify-content-center">
+    <form id="grade-calc">
+        <h4>Grade Calculator</h4>
+        <div class="form-group">
+            <label>Assignments Score</label>
+            <input type="number" class="form-control" id="assignment" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Group Projects Score</label>
+            <input type="number" class="form-control" id="group-project" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Quizzes Score</label>
+            <input type="number" class="form-control" id="quiz" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Midterm Score</label>
+            <input type="number" class="form-control" id="midterm" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Final Score</label>
+            <input type="number" class="form-control" id="final" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>INTEX Score</label>
+            <input type="number" class="form-control" id="intex" placeholder="Enter %">
+        </div>
+        <br />
+        <button id="btn" type="button" class="btn btn-primary">Calculate</button>
+        <br />
+        <br />-->
+<!--Output results-->
+<!--<h4 id="final-percent"></h4>
+    <h4 id="final-letter"></h4>
+</form><br />-->
+
+<!--Grade Calculator form-->
+<div class="col align-self-center d-flex justify-content-center">
+    <form id="grade-calc" method="POST">
+        <h4>Grade Calculator</h4>
+        <div class="form-group">
+            <label>Assignments Score</label>
+            <input asp-for="assignmentScore" class="form-control" id="assignment" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Group Projects Score</label>
+            <input  asp-for="groupProjectScore" class="form-control" id="group-project" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Quizzes Score</label>
+            <input  asp-for="quizScore" class="form-control" id="quiz" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Midterm Score</label>
+            <input  asp-for="midtermScore" class="form-control" id="midterm" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>Final Score</label>
+            <input  asp-for="finalScore" class="form-control" id="final" placeholder="Enter %">
+        </div><br />
+        <div class="form-group">
+            <label>INTEX Score</label>
+            <input  asp-for="intexScore" class="form-control" id="intex" placeholder="Enter %">
+        </div>
+        <br />
+        <button id="btn" type="submit" class="btn btn-primary">Calculate</button>
+        <br />
+        <br />
+
+        <!--Validation summary-->
+        <div asp-validation-summary="All"></div>
+
+        <!--Output results-->
+        <h4 id="final-percent"></h4>
+        <h4 id="final-letter"></h4>
+    </form><br />
+
+</div>
