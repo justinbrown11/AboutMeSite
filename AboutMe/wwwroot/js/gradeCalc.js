@@ -41,6 +41,9 @@
     else finalLetter = "F";
 
     // Output results to page
-    $("#final-percent").html(`Final Percent Grade: ${finalPercent}%`);
-    $("#final-letter").html(`Final Letter Grade: ${finalLetter}`);
+    //$("#final-percent").html(`Final Percent Grade: ${finalPercent}%`);
+    //$("#final-letter").html(`Final Letter Grade: ${finalLetter}`);
+
+    // Per instruction by Prof. Hilton, make it an alert instead
+    alert(`Final Percent Grade:\t${finalPercent}\n\nFinal Letter Grade:\t${finalLetter}`)
 });
